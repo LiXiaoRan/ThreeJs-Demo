@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    width: 40rem;
+    height: 40rem;
+}
+
+.glcanvas {
+    width: 40rem;
+    height: 40rem;
+}
