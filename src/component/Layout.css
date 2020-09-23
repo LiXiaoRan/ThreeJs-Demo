@@ -1,0 +1,13 @@
+.root_dom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contaniner{
+    width: 25rem;
+    height: 25rem;
+    margin-top: 1%;
+    background-color: aqua;
+}
