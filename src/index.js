@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 // import App from './App';
-import Geometry from "./component/Geometry";
+// import Geometry from "./component/Geometry";
 import Layout from "./component/Layout";
 import * as serviceWorker from "./serviceWorker";
 

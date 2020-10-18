@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import module_styles from "./Layout.css";
+import styles from "./Layout.css";
 
 export default class Layout extends Component {
     static propTypes = {
@@ -9,14 +9,14 @@ export default class Layout extends Component {
 
     render() {
         return (
-            <div className={module_styles.root_dom}>
-                <div className={module_styles.container}></div>
-                <div className={module_styles.container}></div>
-                <div className={module_styles.container}></div>
-                <div className={module_styles.container}></div>
-                <div className={module_styles.container}></div>
-                <div className={module_styles.container}></div>
-                <div className={module_styles.container}></div>
+            <div className={styles.root_dom}>
+                <div className={styles.container}></div>
+                <div className={styles.container}></div>
+                <div className={styles.container}></div>
+                <div className={styles.container}></div>
+                <div className={styles.container}></div>
+                <div className={styles.container}></div>
+                <div className={styles.container}></div>
             </div>
         );
     }
