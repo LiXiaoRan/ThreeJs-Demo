@@ -10,13 +10,13 @@ export default class Layout extends Component {
     render() {
         return (
             <div className={styles.root_dom}>
-                <div className={styles.container}></div>
-                <div className={styles.container}></div>
-                <div className={styles.container}></div>
-                <div className={styles.container}></div>
-                <div className={styles.container}></div>
-                <div className={styles.container}></div>
-                <div className={styles.container}></div>
+                <div className={styles.contaniner}></div>
+                <div className={styles.contaniner}></div>
+                <div className={styles.contaniner}></div>
+                <div className={styles.contaniner}></div>
+                <div className={styles.contaniner}></div>
+                <div className={styles.contaniner}></div>
+                <div className={styles.contaniner}></div>
             </div>
         );
     }
