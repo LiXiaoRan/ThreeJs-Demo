@@ -6,8 +6,14 @@
 }
 
 .contaniner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 25rem;
     height: 25rem;
     margin-top: 1%;
-    background-color: aqua;
+    /* background-color: aqua; */
+    border-color: black;
+    border-width: 1rem;
+    border: solid;
 }
