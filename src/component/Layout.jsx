@@ -5,6 +5,7 @@ import Geometry from "./Geometry";
 import CubeGeometry from "./Geometry/CubeGeometry";
 import PlaneGeometry from "./Geometry/PlaneGeometry";
 import SphereGeometry from "./Geometry/SphereGeometry";
+import CircleGeometry from "./Geometry/CircleGeometry";
 
 export default class Layout extends Component {
     static propTypes = {
@@ -26,7 +27,9 @@ export default class Layout extends Component {
                 <div className={styles.contaniner}>
                     <SphereGeometry />
                 </div>
-                <div className={styles.contaniner}></div>
+                <div className={styles.contaniner}>
+                    <CircleGeometry />
+                </div>
                 <div className={styles.contaniner}></div>
                 <div className={styles.contaniner}></div>
             </div>
