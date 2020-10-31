@@ -7,6 +7,11 @@ import PlaneGeometry from "./Geometry/PlaneGeometry";
 import SphereGeometry from "./Geometry/SphereGeometry";
 import CircleGeometry from "./Geometry/CircleGeometry";
 import CylinderGeometry from "./Geometry/CylinderGeometry";
+import TetrahedronGeometry from "./Geometry/TetrahedronGeometry";
+import OctahedronGeometry from "./Geometry/OctahedronGeometry";
+import IcosahedronGeometry from "./Geometry/IcosahedronGeometry";
+import TorusGeometry from "./Geometry/TorusGeometry";
+import TorusKnotGeometry from "./Geometry/TorusKnotGeometry";
 
 export default class Layout extends Component {
     static propTypes = {
@@ -34,7 +39,21 @@ export default class Layout extends Component {
                 <div className={styles.contaniner}>
                     <CylinderGeometry />
                 </div>
-                <div className={styles.contaniner}></div>
+                <div className={styles.contaniner}>
+                    <TetrahedronGeometry />
+                </div>
+                <div className={styles.contaniner}>
+                    <OctahedronGeometry />
+                </div>
+                <div className={styles.contaniner}>
+                    <IcosahedronGeometry />
+                </div>
+                <div className={styles.contaniner}>
+                    <TorusGeometry />
+                </div>
+                <div className={styles.contaniner}>
+                    <TorusKnotGeometry />
+                </div>
             </div>
         );
     }
