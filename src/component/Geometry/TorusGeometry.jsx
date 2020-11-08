@@ -20,6 +20,8 @@ export class TorusGeometry extends Component {
         camera.position.set(4, 6, 10);
         camera.lookAt(0, 0, 0);
 
+        const axesHelper = new THREE.AxesHelper( 3 );
+        scene.add(axesHelper);
         scene.add(camera);
 
         const TorusGeometry = new THREE.Mesh(

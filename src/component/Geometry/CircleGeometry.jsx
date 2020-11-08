@@ -35,6 +35,8 @@ class CircleGeometry extends Component {
                 wireframe: true,
             })
         );
+        const axesHelper = new THREE.AxesHelper( 3 );
+        scene.add(axesHelper);
         // 添加几何体
         scene.add(circle);
 

@@ -28,6 +28,8 @@ export class IcosahedronGeometry extends Component {
             })
         );
 
+        const axesHelper = new THREE.AxesHelper( 3 );
+        scene.add(axesHelper);
         scene.add(IcosahedronGeometry);
 
         glrender.render(scene, camera);

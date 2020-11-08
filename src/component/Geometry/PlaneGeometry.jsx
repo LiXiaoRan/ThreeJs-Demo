@@ -28,6 +28,8 @@ class PlaneGeometry extends Component {
             })
         );
 
+        const axesHelper = new THREE.AxesHelper( 3 );
+        scene.add(axesHelper);
         scene.add(cube);
 
         glRender.render(scene, camera);

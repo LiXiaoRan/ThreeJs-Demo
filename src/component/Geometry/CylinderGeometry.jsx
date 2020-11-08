@@ -27,7 +27,8 @@ export class CylinderGeometry extends Component {
                 wireframe: true,
             })
         );
-
+        const axesHelper = new THREE.AxesHelper(3);
+        scene.add(axesHelper);
         scene.add(cylinder);
 
         glRender.render(scene, camera);

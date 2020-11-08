@@ -15,9 +15,9 @@ class CubeGeometry extends Component {
 
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(45, 1 / 1, 1, 100);
-        camera.position.set(3, 4, 7);
+        camera.position.set(4, 5, 7);
         camera.lookAt(0, 0, 0);
-        
+
         scene.add(camera);
 
         const cube = new THREE.Mesh(
@@ -28,8 +28,23 @@ class CubeGeometry extends Component {
             })
         );
 
+        const points = [];
+        const xAxis = new THREE.Vector3(2, 0, 0);
+        const yAxis = new THREE.Vector3(0, 2, 0);
+        const zAxis = new THREE.Vector3(0, 0, 2);
+        points.push(xAxis);
+        points.push(yAxis);
+        points.push(zAxis);
+        const lineMaterial = new THREE.LineBasicMaterial({color: 0xff0000})
+        const lineGeometry = new THREE.BufferGeometry().setFromPoints( points );
+        const line = new THREE.Line(lineGeometry,lineMaterial);
+        
+        const axesHelper = new THREE.AxesHelper( 3 );
+        scene.add(axesHelper);
+        scene.add(line);
         scene.add(cube);
-
+        
+        // glRender.render()
         glRender.render(scene, camera);
     };
 

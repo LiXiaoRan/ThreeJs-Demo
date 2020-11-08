@@ -29,6 +29,9 @@ export class TorusGeometry extends Component {
                 wireframe: true,
             })
         );
+
+        const axesHelper = new THREE.AxesHelper( 3 );
+        scene.add(axesHelper);
         scene.add(TorusKnotGeometry);
 
         glrender.render(scene, camera);
